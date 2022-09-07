@@ -593,7 +593,7 @@ For URI/URL validation the following types are available:
 - `HttpUrl`: scheme `http` or `https`, TLD required, host required, max length 2083
 - `FileUrl`: scheme `file`, host not required
 - `PostgresDsn`: user info required, TLD not required, host required,
-  as of V.10 `PostgresDsn` supports multiple hosts. The following schemes are supported:
+  as of V1.10 `PostgresDsn` supports multiple hosts. The following schemes are supported:
   - `postgres`
   - `postgresql`
   - `postgresql+asyncpg`
@@ -607,8 +607,8 @@ For URI/URL validation the following types are available:
   - `cockroachdb+psycopg2`
 - `AmqpDsn`: schema `amqp` or `amqps`, user info not required, TLD not required, host not required
 - `RedisDsn`: scheme `redis` or `rediss`, user info not required, tld not required, host not required (CHANGED: user info
-- `MongoDsn` : scheme `mongodb`, user info not required, database name not required, port
   not required from **v1.6** onwards), user info may be passed without user part (e.g., `rediss://:pass@localhost`)
+- `MongoDsn` : scheme `mongodb`, user info not required, database name not required, port not required
 - `stricturl`: method with the following keyword arguments:
     - `strip_whitespace: bool = True`
     - `min_length: int = 1`
